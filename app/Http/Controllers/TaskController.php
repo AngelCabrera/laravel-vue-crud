@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Task;
+
 use Illuminate\Http\Request;
+use App\Task;
 
 class TaskController extends Controller
 {
@@ -40,13 +41,6 @@ class TaskController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Task  $task
-     * @return \Illuminate\Http\Response
-     */
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Task  $task
@@ -68,7 +62,7 @@ class TaskController extends Controller
     public function update(Request $request, Task $task)
     {
         //
-        $task->delete();
+        
     }
 
     /**
@@ -79,6 +73,6 @@ class TaskController extends Controller
      */
     public function destroy(Task $task)
     {
-        //
+        $task->delete();
     }
 }
