@@ -12,7 +12,14 @@ const mix = require('laravel-mix');
  */
 
 mix.scripts([
+	'resources/js/jquery.min.js',
+	'resources/js/bootstrap.min.js',
+	'resources/js/toastr.min.js',
 	'resources/js/vue.js',
 	'resources/js/axios.js',
 	'resources/js/app.js'
-	], 'public/js/app.js');
+	], 'public/js/app.js')
+	.styles([
+	'resources/css/bootstrap.min.css',
+	'resources/css/toastr.css',	
+	], 'public/css/app.css');
